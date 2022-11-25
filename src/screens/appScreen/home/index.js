@@ -15,9 +15,9 @@ const index = () => {
         {name:'Movers'} ,
         {name:'Hair & Beauty'} ,
         {name:'Home Sanitize'} ,
-        {name:'Movers'} ,
-        {name:'Hair & Beauty'} ,
-        {name:'Home Sanitize'} ,
+        // {name:'Movers'} ,
+        // {name:'Hair & Beauty'} ,
+        // {name:'Home Sanitize'} ,
       
 
 

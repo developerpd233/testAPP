@@ -10,9 +10,12 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 const App = () => {
   const Stack = createNativeStackNavigator();
+  const StackScreenOptions = {
+    headerShown: false
+};
   return (
     <NavigationContainer>
-    <Stack.Navigator initialRouteName="signUp">
+    <Stack.Navigator initialRouteName="signUp" screenOptions={StackScreenOptions}>
       <Stack.Screen name="signUp" component={SignUp} />
       <Stack.Screen name="home" component={Home} />
     </Stack.Navigator>
