@@ -1,10 +1,10 @@
 import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
     Header:{
-        flexDirection:'row', justifyContent:'space-between', padding:10, alignItems:'center'
+        flexDirection:'row', justifyContent:'space-between', paddingTop:10, alignItems:'center', height:70, paddingHorizontal:10, backgroundColor:'#eff9fe'
     },
     left:{
-        flexDirection:'row', margin:0 
+        flexDirection:'row', marginLeft:-5
     },
     home:{
         fontSize:14, fontWeight:'800'

@@ -8,11 +8,11 @@ import { Button, SocialTab } from '../../../components'
 const SignUp = (props) => {
     return (
         <View style={styles.container}>
-            <ImageBackground source={Banner} style={styles.bg} resizeMode="contain">
         <View style={styles.logo}>
-        <Icon name='home' type='font-awesome' size={80} color='#6ac4fe'/>
+        <Icon name='home' type='font-awesome' size={80} color='#6ac4fe' style={{paddingBottom:10}}/>
         <Text style={styles.logoText}>Handy<Text style={styles.logoText1}>zone</Text></Text>
         </View>
+            <ImageBackground source={Banner} style={styles.bg} resizeMode="contain">
       </ImageBackground>
       {/* <ScrollView> */}
             <View style={styles.form}>

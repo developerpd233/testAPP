@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
         
     },
     btnText:{
-        fontSize:12
+        fontSize:10
     },
     btnMain:{
         flexDirection:'row',

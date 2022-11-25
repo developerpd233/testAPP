@@ -4,7 +4,7 @@ import { Header , Card, BotterBar } from '../../../components'
 import { Banner } from '../../../assets'
 import { styles } from './styles'
 import {Icon} from 'react-native-elements'
-const index = () => {
+const Home = () => {
     const data =[
         {name:'Home Clean'} ,
         {name:'Electrition'} ,
@@ -25,18 +25,18 @@ const index = () => {
     return (
         <>
         <View style={{backgroundColor:'#fff' , flex:1}}>
-            <ImageBackground source={Banner} style={{ height: 300, backgroundColor:'#ccedf9' , }} resizeMode='center'>
                 <Header />
-                <View style={{justifyContent:'center', alignItems:'center',marginTop:-25}}>
+            <ImageBackground source={Banner} style={{ height: 160, backgroundColor:'#eff9fe' }} resizeMode="contain" >
+                <View style={{justifyContent:'center', alignItems:'center',marginTop:-5}}>
                     <Text style={styles.logoText}>Handy<Text style={styles.logoText1}>zone</Text></Text>
                 </View>
-                 <View style={{backgroundColor:'#fff' ,alignItems:'center',borderRadius:100,height:50 ,marginHorizontal:60,marginTop:50,flexDirection:'row',paddingHorizontal:20}}>
-                     <Icon type='antdesign' name='search1' size={25} color='#999'  />
-                    <TextInput style={{flex:1 ,}} placeholder='Search service' placeholderTextColor={'#000'} />
+                 <View style={{backgroundColor:'#fff' ,alignItems:'center',borderRadius:100,height:40 ,marginHorizontal:100,marginTop:50,flexDirection:'row',paddingHorizontal:15}}>
+                     <Icon type='antdesign' name='search1' size={18} color='#d3d7e1'  style={{marginRight:5}} />
+                    <TextInput style={{flex:1 ,fontSize:12,}} placeholder='Search service' placeholderTextColor={'#bebebe'} />
                  </View>
             </ImageBackground>
-            <View style={{marginTop:5,marginHorizontal:20}}>
-                <Text style={{color:'#000' , fontSize:16}}>
+            <View style={{marginTop:10,marginHorizontal:20,}}>
+                <Text style={{color:'#5d5d5e' , fontSize:14, fontWeight:'600'}}>
                     Popular Service
                 </Text>
                 <FlatList data={data}
@@ -59,4 +59,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Home

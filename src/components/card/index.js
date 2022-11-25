@@ -8,8 +8,8 @@ const index = ({name}) => {
   return (
     <View style={styles.mainView}>
         <View style={{flexDirection:'row' , alignItems:'center' , justifyContent:'space-between' , marginVertical:10, marginHorizontal:5}}>
-    <Text style={{ marginLeft:-10,  marginTop:35,  fontSize:12, fontWeight:'700',transform: [{ rotate: '-90deg'}]}}>{name}</Text>
-    <View style={{position:'absolute' , top:'75%' , left:'50%' , right:0 , bottom:0,}}>
+    <Text style={{ marginLeft:-30,width:85,  marginTop:35,fontSize:12, fontWeight:'700',transform: [{ rotate: '-90deg'}]}}>{name}</Text>
+    <View style={{position:'absolute' , top:'40%' , left:'50%' , right:0 , bottom:0,}}>
 
     <Image source={Img5} style={styles.img} resizeMode="contain"/>
     </View>

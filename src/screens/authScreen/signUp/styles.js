@@ -1,14 +1,15 @@
 import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
     container: {
-        backgroundColor:'#fff',
-        height:'100%'
-        // flex:1
+        backgroundColor:'#f0f8fd',
+        height:'100%',
+        // flex:1,
+
     },
     bg:{
         width:"100%",
         flex:1,
-       backgroundColor:'#d5e2ea',
+       backgroundColor:'#f0f8fd',
         margin:0,
         padding:0
     },
@@ -24,14 +25,15 @@ export const styles = StyleSheet.create({
     },
     logo:{
         alignItems:'center',
-        marginTop:60
+        marginTop:90,
+    
     },
     form:{
-        // height:200,
+        height:'40%',
         backgroundColor:'#fff',
         borderTopRightRadius:20,
         borderTopLeftRadius:20,
-        marginTop:-20,
+        marginTop:0,
         width:"100%",
 
     },
@@ -39,14 +41,14 @@ export const styles = StyleSheet.create({
         fontSize:14,
         fontWeight:'800',
         color:'#565656',
-        margin:0
+        marginBottom:5
     },
     formTitle:{
         fontSize:18,
         fontWeight:'800',
         color:'#c8d9e6',
         textAlign:'center',
-        padding:20
+        paddingTop:40
     },
     textInput:{
         width:'85%',
