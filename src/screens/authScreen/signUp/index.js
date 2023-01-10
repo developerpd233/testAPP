@@ -1,13 +1,33 @@
-import { View, Text, ImageBackground, ScrollView, TextInput } from 'react-native'
-import React from 'react'
+import { View, Text, ImageBackground, ScrollView, TextInput, Switch } from 'react-native'
+import React, { useState } from 'react'
 import { styles } from './styles'
 import { Banner } from '../../../assets'
 import { Icon } from 'react-native-elements'
 import { Button, SocialTab } from '../../../components'
+import { useDispatch } from 'react-redux'
+import { themeAction } from '../../../redux/action/themeAction'
 
 const SignUp = (props) => {
+    const dispatch = useDispatch();
+    const [isEnabled, setIsEnabled] = useState(false);
+    const toggleSwitch = () => {
+        if(isEnabled == true){
+            setIsEnabled(false)
+            dispatch(themeAction('light'))
+        }else{
+            setIsEnabled(true)
+            dispatch(themeAction('dark'))
+        }
+    };
     return (
         <View style={styles.container}>
+            <Switch
+        trackColor={{ false: "#767577", true: "#81b0ff" }}
+        thumbColor={isEnabled ? "#f5dd4b" : "#f4f3f4"}
+        ios_backgroundColor="#3e3e3e"
+        onValueChange={toggleSwitch}
+        value={isEnabled}
+      />
         <View style={styles.logo}>
         <Icon name='home' type='font-awesome' size={80} color='#6ac4fe' style={{paddingBottom:10}}/>
         <Text style={styles.logoText}>Handy<Text style={styles.logoText1}>zone</Text></Text>
